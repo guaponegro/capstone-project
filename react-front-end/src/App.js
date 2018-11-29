@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ComicBookContainer from './ComicBookContainer/ComicBookContainer';
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      real_name: "",
+      aliases: "",
+      description: "",
+      id: "",
+      
+    }
+  }
   render() {
     return (
-      <div className="App">
-        
+      <div>
+        <ComicBookContainer name={this.state.name} aliases={this.state.aliases} description={this.state.description} id={this.state.id} powers={this.state.powers}/>
       </div>
     );
   }
