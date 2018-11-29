@@ -10,7 +10,7 @@ class App extends Component {
       aliases: "",
       description: "",
       id: "",
-      
+      first_appeared_in_issue: "",
     }
   }
   render() {
